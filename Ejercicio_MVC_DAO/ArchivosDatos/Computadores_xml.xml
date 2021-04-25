@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<computadores>
+	<computador id="1" nombreComputador="Lenovo LEGION" descripcion="pc gamer Lenovo">
+		<partes>
+			<componente  id="1" nombre="Procesador" descripcion="core i7 10"></componente>
+			<componente  id="2" nombre="Ram" descripcion="16 gb"></componente>
+			<componente  id="3" nombre="SSD" descripcion="M2 1TB"></componente>			 
+		</partes>
+	</computador>
+
+    <computador id="2" nombreComputador="HP envy" descripcion="pc de trabajo">
+		<partes>
+			<componente  id="4" nombre="Procesador" descripcion="core i5 8"></componente>
+			<componente  id="5" nombre="Ram" descripcion="8 gb"></componente>
+			<componente  id="6" nombre="SSD" descripcion="500gb"></componente>			 
+		</partes>
+	</computador>
+
+    <computador id="3" nombreComputador="MacBook" descripcion="pc de apple">
+		<partes>
+			<componente  id="7" nombre="Procesador" descripcion="core i5 5"></componente>
+			<componente  id="8" nombre="Ram" descripcion="12 gb"></componente>
+			<componente  id="9" nombre="SSD" descripcion="250gb"></componente>			 
+		</partes>
+	</computador>
+</computadores> 

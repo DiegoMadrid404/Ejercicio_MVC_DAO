@@ -1,0 +1,66 @@
+[{ "id":"1",
+  "nombreComputador": "Lenovo LEGION",
+  "descripcion": "pc gamer Lenovo",
+  "partes": [
+    {
+      "id": "1",
+      "nombre": "Procesador",
+      "descripcion":" core i7 10"
+    },
+    {
+      "id": "2",
+      "nombre": "Ram",
+      "descripcion":" 16 gb"
+    },  
+    {
+      "id": "3",
+      "nombre": "SSD",
+      "descripcion":" M2 1TB"
+    }
+     
+  ]
+},
+{ "id":"2",
+  "nombreComputador": "HP envy",
+  "descripcion": "pc de trabajo",
+  "partes": [
+    {
+      "id": "4",
+      "nombre": "Procesador",
+      "descripcion":" core i5 8"
+    },
+    {
+      "id": "5",
+      "nombre": "Ram",
+      "descripcion":" 8 gb"
+    },  
+    {
+      "id": "6",
+      "nombre": "SSD",
+      "descripcion":" 500gb"
+    }
+     
+  ]
+},
+{ "id":"3",
+  "nombreComputador": "MacBook ",
+  "descripcion": "pc de apple",
+  "partes": [
+    {
+      "id": "7",
+      "nombre": "Procesador",
+      "descripcion":" core i5 5"
+    },
+    {
+      "id": "8",
+      "nombre": "Ram",
+      "descripcion":" 12 gb"
+    },  
+    {
+      "id": "9",
+      "nombre": "SSD",
+      "descripcion":" 250gb"
+    }
+     
+  ]
+}]

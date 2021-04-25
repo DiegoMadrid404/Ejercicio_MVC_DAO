@@ -1,0 +1,4 @@
+E:\Ejercicio_MVC_DAO\Vista\obj\Debug\Vista.vbprojAssemblyReference.cache
+E:\Ejercicio_MVC_DAO\Vista\obj\Debug\Vista.Resources.resources
+E:\Ejercicio_MVC_DAO\Vista\obj\Debug\Vista.vbproj.GenerateResource.cache
+E:\Ejercicio_MVC_DAO\Vista\obj\Debug\Vista.vbproj.CoreCompileInputs.cache

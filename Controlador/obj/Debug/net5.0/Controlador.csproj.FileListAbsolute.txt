@@ -1,0 +1,12 @@
+E:\Ejercicio_MVC_DAO\Controlador\bin\Debug\net5.0\Controlador.deps.json
+E:\Ejercicio_MVC_DAO\Controlador\bin\Debug\net5.0\Controlador.dll
+E:\Ejercicio_MVC_DAO\Controlador\bin\Debug\net5.0\ref\Controlador.dll
+E:\Ejercicio_MVC_DAO\Controlador\bin\Debug\net5.0\Controlador.pdb
+E:\Ejercicio_MVC_DAO\Controlador\obj\Debug\net5.0\Controlador.csprojAssemblyReference.cache
+E:\Ejercicio_MVC_DAO\Controlador\obj\Debug\net5.0\Controlador.GeneratedMSBuildEditorConfig.editorconfig
+E:\Ejercicio_MVC_DAO\Controlador\obj\Debug\net5.0\Controlador.AssemblyInfoInputs.cache
+E:\Ejercicio_MVC_DAO\Controlador\obj\Debug\net5.0\Controlador.AssemblyInfo.cs
+E:\Ejercicio_MVC_DAO\Controlador\obj\Debug\net5.0\Controlador.csproj.CoreCompileInputs.cache
+E:\Ejercicio_MVC_DAO\Controlador\obj\Debug\net5.0\Controlador.dll
+E:\Ejercicio_MVC_DAO\Controlador\obj\Debug\net5.0\ref\Controlador.dll
+E:\Ejercicio_MVC_DAO\Controlador\obj\Debug\net5.0\Controlador.pdb
