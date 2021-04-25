@@ -15,7 +15,7 @@ namespace Modelo.DTO
             {
                 _parte += parte;
             }
-            return "id: " + id + " nombre Computador " + nombreComputador + " descripcion " + descripcion + " Parte: " + _parte;
+            return "---------- \n id: " + id + "\n nombre Computador  " + nombreComputador + "\n descripcion " + descripcion + "\n-----compontes: \n Parte: " + _parte;
 
 
         }

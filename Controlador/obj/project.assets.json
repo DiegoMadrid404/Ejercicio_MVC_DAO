@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diego\\Desktop\\Ejercicio_MVC_DAO\\Controlador\\Controlador.csproj",
+      "projectUniqueName": "D:\\REPOSITORIES\\Ejercicio_MVC_DAO\\Controlador\\Controlador.csproj",
       "projectName": "Controlador",
-      "projectPath": "C:\\Users\\diego\\Desktop\\Ejercicio_MVC_DAO\\Controlador\\Controlador.csproj",
+      "projectPath": "D:\\REPOSITORIES\\Ejercicio_MVC_DAO\\Controlador\\Controlador.csproj",
       "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\diego\\Desktop\\Ejercicio_MVC_DAO\\Controlador\\obj\\",
+      "outputPath": "D:\\REPOSITORIES\\Ejercicio_MVC_DAO\\Controlador\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",

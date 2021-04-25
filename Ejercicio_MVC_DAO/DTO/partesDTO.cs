@@ -9,7 +9,7 @@ namespace Modelo.DTO
         public override string ToString()
         {
             
-            return "id: " + id + " nombre parte " + nombre + " descripcion " + descripcion;
+            return "\n ----- \n id: " + id + " \n nombre parte " + nombre + " \n descripcion " + descripcion;
 
         }
 

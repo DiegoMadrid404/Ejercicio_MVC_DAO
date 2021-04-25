@@ -9,34 +9,41 @@ namespace Modelo
         {
             List<computadorDTO> listaComputador = new List<computadorDTO>();
 
-            DAO.DAO dao =null;
-
-            Console.WriteLine("Ingrese tipo de archivo que desar 1.json 2.xml");
-
-            string tipoArchivo = Console.ReadLine();
-
-            switch (tipoArchivo)
+            DAO.DAO dao = null;
+            while (true)
             {
-                case "1":
-                    dao = new DAO.DAOjson();
-                    break;
-                case "2":
-                    dao = new DAO.DAOxml();
-                    break;
-                default:
-                    Console.WriteLine("ingrese un numero valido");
-                    break;
+
+                Console.WriteLine("Ingrese tipo de archivo que desar 1.json 2.xml");
+
+                string tipoArchivo = Console.ReadLine();
+
+                switch (tipoArchivo)
+                {
+                    case "1":
+                        Console.WriteLine("ARCHIVO JSON");
+
+                        dao = new DAO.DAOjson();
+                        break;
+                    case "2":
+                        Console.WriteLine("ARCHIVO XML");
+
+                        dao = new DAO.DAOxml();
+                        break;
+                    default:
+                        Console.WriteLine("ingrese un numero valido");
+                        break;
+                }
+                listaComputador = dao.leerArchvio();
+
+                foreach (var pc in listaComputador)
+                {
+                    Console.WriteLine(pc);
+                }
+
+                Console.ReadKey();
             }
 
-
-            listaComputador = dao.leerArchvio();
-           
-            foreach (var pc in listaComputador)
-            {
-                Console.WriteLine(pc);
-            }
-
-            Console.ReadKey();
+         
 
         }
     }
