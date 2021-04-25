@@ -1,4 +1,4 @@
-# Universidad Distrital Francisco Jose de Paula Santander
+# Universidad Distrital Francisco José de Caldas
 
 ## Especialidad en Ingeniería de Software
 
