@@ -1,15 +1,58 @@
 ﻿using Modelo.DTO;
 using System.Collections.Generic;
+using System.Linq;
 using System.Xml;
 
 namespace Modelo.DAO
 {
     public partial class DAOxml : DAO
     {
-        public List<computadorDTO> leerArchvio()
+        public computadorDTO BuscarPc(string idCompuntador)
         {
+            List<computadorDTO> computadores = leerArchvio();
+            computadorDTO computador = computadores.Where(n => n.id == idCompuntador).FirstOrDefault();
+            return computador;
+        }
 
-             
+        public partesDTO BuscarParte(string idParte)
+        {
+            List<partesDTO> partes = BuscarTodasLasPartes();
+            partesDTO parte = partes.Where(n => n.id == idParte).FirstOrDefault();
+            return parte;
+        }
+
+        public List<partesDTO> BuscarTodasLasPartes()
+        {
+            List<computadorDTO> computadores = leerArchvio();
+            List<partesDTO> partes = new List<partesDTO>();
+            foreach (var pc in computadores)
+            {
+                partes.AddRange(pc.partes);
+
+            }
+            return partes;
+        }
+
+        public List<computadorDTO> BuscarPcPorIdParte(string idparte)
+        {
+            List<computadorDTO> computadores = leerArchvio();
+            List<computadorDTO> Computadorpartes = new List<computadorDTO>();
+            foreach (var pc in computadores)
+            {
+                foreach (var parte in pc.partes)
+                {
+                    if (parte.id == idparte)
+                    {
+                        Computadorpartes.Add(pc);
+                    }
+
+                }
+            }
+            return Computadorpartes;
+        }
+
+        public List<computadorDTO> leerArchvio()
+        {                         
             string rutaArchivo = @"..\..\ArchivosDatos\Computadores_xml.xml";
 
             List<computadorDTO> _computadorDTOList = new List<computadorDTO>();
@@ -42,7 +85,6 @@ namespace Modelo.DAO
                 _computadorDTOList.Add(_computadorDTO);
                 cont++;
             }
-
 
             return _computadorDTOList;
 
