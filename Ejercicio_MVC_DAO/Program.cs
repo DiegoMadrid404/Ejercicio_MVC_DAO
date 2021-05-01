@@ -133,6 +133,32 @@ namespace Modelo
                             }
                         }
                         break;
+
+                    case "8":
+                        Console.WriteLine("ingrese el nombre del pc");
+                        string nombrepc = Console.ReadLine();
+
+                        computadorDTO computador2 = dao.BuscarPcPorNombre(nombrepc);
+
+                        if (computador2 == null)
+                        {
+                            Console.WriteLine("el nombre no existe");
+                            break;
+                        }
+                        Console.WriteLine("\n-----COMPUTADOR-----");
+                        Console.WriteLine($"id: {computador2.id}");
+                        Console.WriteLine($"nombre: {computador2.nombreComputador}");
+                        Console.WriteLine($"descripcion: {computador2.descripcion}");
+                        Console.WriteLine("-----PARTES-----");
+                        foreach (var partes in computador2.partes)
+                        {
+                            Console.WriteLine("----------");
+                            Console.WriteLine($"id: {partes.id}");
+                            Console.WriteLine($"nombre: {partes.nombre}");
+                            Console.WriteLine($"descripcion: {partes.descripcion}");
+                        }
+                        Console.WriteLine(computador2);
+                        break;
                     default:
                         Console.WriteLine("ingrese una acción valida");
                         break;

@@ -89,6 +89,11 @@ namespace Modelo.DAO
             return _computadorDTOList;
 
         }
+
+        public computadorDTO BuscarPcPorNombre(string nombre)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 
 

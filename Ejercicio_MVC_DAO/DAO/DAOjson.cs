@@ -26,7 +26,14 @@ namespace Modelo.DAO
             computadorDTO computador = computadores.Where(n => n.id == idCompuntador).FirstOrDefault();
             return computador;
         }
+        public computadorDTO BuscarPcPorNombre(string nombrePc)
+        {
+            List<computadorDTO> computadores = leerArchvio();
+            computadores = computadores.Where(n => (n.nombreComputador).ToLower().Trim().Contains(nombrePc.ToLower().Trim())).ToList();
+            computadorDTO computador = computadores.Where(n => n.nombreComputador.Contains(nombrePc)).FirstOrDefault();
 
+            return computador;
+        }
         public partesDTO BuscarParte(string idParte)
         {
             List<partesDTO> partes = BuscarTodasLasPartes();
@@ -58,7 +65,7 @@ namespace Modelo.DAO
                     {
                         Computadorpartes.Add(pc);
                     }
-                   
+
                 }
             }
             return Computadorpartes;

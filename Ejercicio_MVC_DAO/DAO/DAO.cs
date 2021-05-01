@@ -7,6 +7,7 @@ namespace Modelo.DAO
     {
         List<computadorDTO> leerArchvio();
         computadorDTO BuscarPc(string idCompuntador);
+        computadorDTO BuscarPcPorNombre(string idCompuntador);
 
         List<partesDTO> BuscarTodasLasPartes();
         partesDTO BuscarParte(string idParte);
