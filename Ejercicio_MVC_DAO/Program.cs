@@ -10,7 +10,7 @@ namespace Modelo
             List<computadorDTO> listaComputador = new List<computadorDTO>();
             List<partesDTO> listaParte = new List<partesDTO>();
 
-            DAO.DAO dao = null;
+            DAO.FABRICADAO dao = null;
             while (true)
             {
 
@@ -35,7 +35,7 @@ namespace Modelo
                         break;
                 }
 
-                Console.WriteLine("Que accion desea: \n 1. consultar todo \n 2. consultar solo computadores. \n 3. consultar por id un computador \n 4. Consultar todas las partes \n 5. Consultar una parte por id \n 6. Consultar pc por id de una parte");
+                Console.WriteLine("Que accion desea: \n 1. consultar todo \n 2. consultar solo computadores. \n 3. consultar por id un computador \n 4. Consultar todas las partes \n 5. Consultar una parte por id \n 6. Consultar pc por id de una parte \n 7. Consultar pc por nombre");
 
                 string accion = Console.ReadLine();
 
@@ -134,7 +134,7 @@ namespace Modelo
                         }
                         break;
 
-                    case "8":
+                    case "7":
                         Console.WriteLine("ingrese el nombre del pc");
                         string nombrepc = Console.ReadLine();
 

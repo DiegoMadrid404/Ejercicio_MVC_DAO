@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="DAO\DAOxml.cs" />
     <Compile Include="DAO\DAOjson.cs" />
-    <Compile Include="DAO\DAO.cs" />
+    <Compile Include="DAO\FABRICADAO.cs" />
     <Compile Include="DTO\partesDTO.cs" />
     <Compile Include="DTO\computadorDTO.cs" />
     <Compile Include="Program.cs" />

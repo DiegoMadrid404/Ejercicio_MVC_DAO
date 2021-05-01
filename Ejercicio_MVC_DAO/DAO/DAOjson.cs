@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Modelo.DAO
 {
-    public partial class DAOjson : DAO
+    public partial class DAOjson : FABRICADAO
     {
         public List<computadorDTO> leerArchvio()
         {
@@ -29,8 +29,7 @@ namespace Modelo.DAO
         public computadorDTO BuscarPcPorNombre(string nombrePc)
         {
             List<computadorDTO> computadores = leerArchvio();
-            computadores = computadores.Where(n => (n.nombreComputador).ToLower().Trim().Contains(nombrePc.ToLower().Trim())).ToList();
-            computadorDTO computador = computadores.Where(n => n.nombreComputador.Contains(nombrePc)).FirstOrDefault();
+            computadorDTO computador = computadores.Where(n => ((n.nombreComputador).ToLower().Replace(" ", "")).Equals(nombrePc.ToLower().Replace(" ", ""))).FirstOrDefault();
 
             return computador;
         }

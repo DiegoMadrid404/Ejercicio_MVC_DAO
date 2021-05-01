@@ -5,7 +5,7 @@ using System.Xml;
 
 namespace Modelo.DAO
 {
-    public partial class DAOxml : DAO
+    public partial class DAOxml : FABRICADAO
     {
         public computadorDTO BuscarPc(string idCompuntador)
         {
@@ -90,9 +90,12 @@ namespace Modelo.DAO
 
         }
 
-        public computadorDTO BuscarPcPorNombre(string nombre)
+        public computadorDTO BuscarPcPorNombre(string nombrePc)
         {
-            throw new System.NotImplementedException();
+            List<computadorDTO> computadores = leerArchvio();
+            computadorDTO computador = computadores.Where(n => ((n.nombreComputador).ToLower().Replace(" ", "")).Equals(nombrePc.ToLower().Replace(" ", ""))).FirstOrDefault();
+
+            return computador;
         }
     }
 
